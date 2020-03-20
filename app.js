@@ -1,5 +1,5 @@
 // Storage Controller
-const StorageCtrl = (function () {
+const StorageController = (function () {
     const storeItem = function (item) {
         let items;
 
@@ -118,7 +118,7 @@ const ItemController = (function () {
         let ID = 0;
         const itemsLength = state.items.length
         // Create ID
-        if (itemsLength > 0) {
+        if (itemsLength > 1) {
             ID = state.items[itemsLength - 1].id + 1
         } else {
             ID = 0
